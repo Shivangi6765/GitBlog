@@ -1,0 +1,29 @@
+@charset "ISO-8859-1";
+body{
+	text-align:center;
+	background:linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url(college.jpeg);
+	background-size:cover;
+	background-position:center;
+	font-family:Times New Roman;
+	border:5px,solid red;
+	padding:40px;
+	
+}
+h1{
+	text-transform:uppercase;
+	transition:all 4s ease-in-out;
+	font-family:"sans-serif";
+	font-size:38px;
+	line-height:14px;
+	color:#fff;
+}
+a{
+	text-decoration: none;
+    font-size: 30px;
+    line-height: 20px;
+    color: darkgrey;
+}
+a:hover{
+	background-color:#f44336;
+	cursor:pointer;
+}
