@@ -1,0 +1,72 @@
+@charset "ISO-8859-1";
+body{
+	text-align:center;
+	background:linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url(bg.jpg);
+	background-size:cover;
+	background-position:center;
+	font-family:Times New Roman;
+	border:5px,solid red;
+	padding:40px;
+}
+.contact-title{
+	margin-top:20px;
+	color:#fff;
+	text-transform:uppercase;
+	transition:all 4s ease-in-out;
+}
+.contact-title h1{
+	font-size:32px;
+	line-height:14px;
+}
+.contact-title h2{
+	line-height:10px;
+}
+.contact-form{
+	margin-top:50px;
+	transition:all 4s ease-in-out;
+	font-size:26px;
+	font-family:Arial;
+	color:#fff;
+	
+}
+.form-control{
+	width:600px;
+	background:transparent;
+	border:none;
+	outline:none;
+	border-bottom:1px solid gray;
+	color:#fff;
+	font-size:20px;
+	margin-bottom:16px;
+	
+}
+.select{
+	font-size:20px;
+	font-family:sans-serif;
+}
+form .submit
+{
+	background:#ff5722;
+	border-color:transparent;
+	color:#fff;
+	font-size:20px;
+	font-weight:bold;
+	letter-spacing:2px;
+	height:50px;
+	margin-top:20px;
+}
+form .submit:hover
+{
+	
+	background-color:#f44336;
+	cursor:pointer;
+}
+h3{
+	font-family:Arial;
+	font-size:20px;
+}
+h3:hover{
+	background-color:#ffc107;
+	cursor:pointer;
+	padding:10px 5px;
+}
