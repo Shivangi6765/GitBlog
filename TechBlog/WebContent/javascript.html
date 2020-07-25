@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<link rel="shortcut icon" href="#">
+<style>
+#prevVideo {
+	background-color: #4169E1;
+	border: none;
+	color: white;
+	padding: 15px 30px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	position: absolute;
+	left: 150px;
+	top: 390px;
+}
+
+#nextVideo {
+	background-color: #4169E1;
+	border: none;
+	color: white;
+	padding: 15px 30px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	position: absolute;
+	left: 320px;
+	top: 390px;
+}
+</style>
+
+
+
+
+</head>
+<body>
+	<button id="prevVideo">Prev</button>
+	<button id="nextVideo">Next</button>
+	<iframe id="frame" src="http://www.youtube.com/embed/dtCS0WGZH4k"
+		width="640" height="360" frameborder="0" allowfullscreen></iframe>
+
+
+
+	<script>
+		var array = [ "dtCS0WGZH4k", "YuaGKDxkG5Q", "-nNJVv48OZM",
+				"HNXhdo5j914", "KPLQO6C3ImA" ];
+		var iframe = document.getElementById('frame');
+		var prevs = "dtCS0WGZH4k";
+		var s = document.getElementById('prevVideo');
+		if (s) {
+			s.addEventListener('click', function() {
+				var curIndex = array.indexOf(prevs);
+				curIndex--;
+				if (curIndex < 0) {
+					curIndex = array.length - 1;
+				}
+				var video = array[curIndex];
+				var url = "http://www.youtube.com/embed/" + video;
+				prevs = video;
+				iframe.src = url;
+			});
+		}
+		var d = document.getElementById('nextVideo');
+		if (d) {
+			d.addEventListener('click', function() {
+				var curIndex = array.indexOf(prevs);
+				curIndex++;
+				if (curIndex >= array.length) {
+					curIndex = 0;
+				}
+				var video = array[curIndex];
+				var url = "http://www.youtube.com/embed/" + video;
+				prevs = video;
+				iframe.src = url;
+			});
+		}
+	</script>
+	
+	
+</body>
+</html>
